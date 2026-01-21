@@ -192,6 +192,18 @@ $(document).ready(function(){
 		.addTo(controller1);
 	}
 
+	if($('.section-contact').length){
+		new ScrollMagic.Scene({
+			triggerElement: ".section-contact",
+			triggerHook: 0.5,
+		})
+		.on("enter", function (event) {
+			$('.section-contact .heading').addClass('active');
+			
+		})
+		.addTo(controller1);
+	}
+
 
 	if($('.section-home1').length){
 		var scene = new ScrollMagic.Scene({
