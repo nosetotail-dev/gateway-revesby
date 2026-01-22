@@ -1,4 +1,4 @@
-.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-location .block .path ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
+.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -8,7 +8,7 @@
   transition: all 0.6s ease;
 }
 
-.section.section-location-sc .stat .coln:before, .section.section-location-sc .heading:before, .section.section-location-sc .heading h2, .section.section-location .heading:before, .section.section-location .heading h2, .section.section-portal .heading h2, .section.section-portal .heading:before, .section.section-portal .text:before, .section.section-contact .heading h2, .section.section-contact .heading:before, .section.section-program .heading h2, .section.section-program .heading:before, .section.section-projectinfo .size ul li:before, .section.section-projectinfo .heading h2, .section.section-projectinfo .heading:before, .section.section-home2 .heading:before, .section.section-home2 .heading h2, .section.section-home1 .heading:before, .section.section-home1 .heading h2 {
+.section.section-floorplan .heading:before, .section.section-floorplan .heading h2, .section.section-warehouse .heading:before, .section.section-warehouse .heading h2, .section.section-location-sc .stat .coln:before, .section.section-location-sc .heading:before, .section.section-location-sc .heading h2, .section.section-location .heading:before, .section.section-location .heading h2, .section.section-portal .heading h2, .section.section-portal .heading:before, .section.section-portal .text:before, .section.section-contact .heading h2, .section.section-contact .heading:before, .section.section-program .heading h2, .section.section-program .heading:before, .section.section-projectinfo .size ul li:before, .section.section-projectinfo .heading h2, .section.section-projectinfo .heading:before, .section.section-home2 .heading:before, .section.section-home2 .heading h2, .section.section-home1 .heading:before, .section.section-home1 .heading h2 {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -19,7 +19,7 @@
   font-weight: normal;
   src: local("Aeonik-Regular"), url("../fonts/Aeonik-Regular.woff") format("woff");
 }
-.acf-map p, .section.section-default h1, .section.section-cta h2, .section.section-location-sc h2, .section.section-location h2, .section.section-portal h2, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
+.section.section-default h1, .section.section-floorplan h2, .section.section-warehouse h2, .section.section-cta h2, .section.section-location-sc h2, .section.section-location h2, .section.section-portal h2, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
   font-family: "Aeonik-Regular", serif;
   font-style: normal;
   font-weight: normal;
@@ -31,7 +31,7 @@
   font-weight: normal;
   src: local("Aeonik-Medium"), url("../fonts/Aeonik-Medium.woff") format("woff");
 }
-.acf-map h3, .searchwp-live-search-result--title a, footer .container .block .agents b, footer .container .block .agents strong, .section.section-portal .agents h4, .section.section-portal .box .item h3, .section.section-agents .block .column h4, .section.section-projectinfo .loc {
+footer .container .block .agents b, footer .container .block .agents strong, .section.section-portal .agents h4, .section.section-portal .box .item h3, .section.section-agents .block .column h4, .section.section-projectinfo .loc {
   font-family: "Aeonik-Medium", serif;
   font-style: normal;
   font-weight: normal;
@@ -1838,6 +1838,191 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .section.section-cta .link a {
   margin: 0 5px;
 }
+.section.section-warehouse h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-warehouse h2 {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+}
+.section.section-warehouse h2 span {
+  display: none;
+}
+.section.section-warehouse h2 span.active {
+  display: block;
+}
+.section.section-warehouse .heading {
+  padding-left: 38px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.section.section-warehouse .heading h2 {
+  margin-bottom: 10px;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.section.section-warehouse .heading h2 b, .section.section-warehouse .heading h2 strong {
+  color: #2BB573;
+}
+.section.section-warehouse .heading.active:before {
+  height: 100%;
+}
+.section.section-warehouse .heading.active h2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.section.section-warehouse .heading:before {
+  width: 20px;
+  height: 0%;
+  background: #2BB573;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
+}
+@media only screen and (min-width: 992px) {
+  .section.section-warehouse .heading:before {
+    width: 35px;
+    clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-warehouse .heading {
+    margin-bottom: 40px;
+    padding-left: 58px;
+    font-size: 18px;
+  }
+}
+.section.section-warehouse .warehouse {
+  position: relative;
+}
+.section.section-warehouse .warehouse .base {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.section.section-warehouse .warehouse .image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  opacity: 0;
+}
+.section.section-warehouse .warehouse .image.active {
+  opacity: 1;
+}
+.section.section-warehouse .warehouse #warehouse {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+.section.section-warehouse .link {
+  margin-top: 30px;
+}
+.section.section-floorplan h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-floorplan h2 {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+}
+.section.section-floorplan .heading {
+  padding-left: 38px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.section.section-floorplan .heading h2 {
+  margin-bottom: 10px;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.section.section-floorplan .heading h2 b, .section.section-floorplan .heading h2 strong {
+  color: #2BB573;
+}
+.section.section-floorplan .heading.active:before {
+  height: 100%;
+}
+.section.section-floorplan .heading.active h2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.section.section-floorplan .heading .content {
+  display: none;
+}
+.section.section-floorplan .heading .content.active {
+  display: block;
+}
+.section.section-floorplan .heading:before {
+  width: 20px;
+  height: 0%;
+  background: #2BB573;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
+}
+@media only screen and (min-width: 992px) {
+  .section.section-floorplan .heading:before {
+    width: 35px;
+    clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-floorplan .heading {
+    margin-bottom: 40px;
+    padding-left: 58px;
+    font-size: 18px;
+  }
+}
+.section.section-floorplan .floorplan {
+  position: relative;
+  max-width: 910px;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+.section.section-floorplan .floorplan .base {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.section.section-floorplan .floorplan .image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  opacity: 0;
+}
+.section.section-floorplan .floorplan .image.active {
+  opacity: 1;
+}
+.section.section-floorplan .floorplan #floorplan {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+.section.section-floorplan .link {
+  margin-top: 30px;
+}
 .section.section-default {
   background: #1A2C56;
   color: #fff;
@@ -2432,44 +2617,6 @@ footer .container .block .column {
   100% {
     width: 100%;
   }
-}
-.searchwp-live-search-result--title a {
-  color: #2BB573;
-  text-decoration: none;
-}
-.searchwp-live-search-result--title a:hover {
-  text-decoration: underline;
-}
-
-.searchwp-live-search-result--desc {
-  font-size: 12px !important;
-  opacity: 0.5;
-}
-
-.searchwp-live-search-no-min-chars:after {
-  font-size: 14px;
-  opacity: 0.5;
-}
-
-.searchwp-live-search-no-results {
-  padding: 2em 2em 0 !important;
-  font-size: 14px;
-}
-
-.acf-map {
-  width: 100%;
-  height: 100vh;
-  color: #1A2C56;
-}
-.acf-map h3 {
-  font-size: 18px;
-}
-.acf-map a {
-  color: #1A2C56;
-}
-
-.acf-map img {
-  max-width: inherit !important;
 }
 
 /*# sourceMappingURL=style.css.map */
