@@ -204,6 +204,30 @@ $(document).ready(function(){
 		.addTo(controller1);
 	}
 
+	if($('.section-portal').length){
+		new ScrollMagic.Scene({
+			triggerElement: ".section-portal",
+			triggerHook: 0.5,
+		})
+		.on("enter", function (event) {
+			$('.section-portal .text').addClass('active');
+			
+		})
+		.addTo(controller1);
+	}
+
+	if($('.section-portal .enquiry').length){
+		new ScrollMagic.Scene({
+			triggerElement: ".section-portal .enquiry",
+			triggerHook: 0.5,
+		})
+		.on("enter", function (event) {
+			$('.section-portal .enquiry .heading').addClass('active');
+			
+		})
+		.addTo(controller1);
+	}
+
 
 	if($('.section-home1').length){
 		var scene = new ScrollMagic.Scene({

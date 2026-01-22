@@ -1,4 +1,4 @@
-.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-team .list .column .image img, .section.section-contact .form .submit .btn, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
+.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-team .list .column .image img, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -8,7 +8,7 @@
   transition: all 0.6s ease;
 }
 
-.section.section-about2 .block .column:before, .section.section-values .block .column:before, .section.section-about1 .items p:before, .section.section-about1 .content p, .section.section-about1 .content h2, .section.section-about1 .content:before, .section.section-team .content p, .section.section-team .content:before, .section.section-team h1, .section.section-contact .heading h2, .section.section-contact .heading:before, .section.section-program .heading h2, .section.section-program .heading:before, .section.section-projectinfo .size ul li:before, .section.section-projectinfo .heading h2, .section.section-projectinfo .heading:before, .section.section-home2 .heading:before, .section.section-home2 .heading h2, .section.section-home1 .heading:before, .section.section-home1 .heading h2 {
+.section.section-about2 .block .column:before, .section.section-values .block .column:before, .section.section-about1 .items p:before, .section.section-about1 .content p, .section.section-about1 .content h2, .section.section-about1 .content:before, .section.section-team .content p, .section.section-team .content:before, .section.section-team h1, .section.section-portal .heading h2, .section.section-portal .heading:before, .section.section-portal .text:before, .section.section-contact .heading h2, .section.section-contact .heading:before, .section.section-program .heading h2, .section.section-program .heading:before, .section.section-projectinfo .size ul li:before, .section.section-projectinfo .heading h2, .section.section-projectinfo .heading:before, .section.section-home2 .heading:before, .section.section-home2 .heading h2, .section.section-home1 .heading:before, .section.section-home1 .heading h2 {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -19,7 +19,7 @@
   font-weight: normal;
   src: local("Aeonik-Regular"), url("../fonts/Aeonik-Regular.woff") format("woff");
 }
-.acf-map p, .section.section-news-article .heading h1, .section.section-about1 .items h3, .section.section-about1 .content h2, .section.section-team h1, .section.section-default h1, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
+.acf-map p, .section.section-news-article .heading h1, .section.section-about1 .items h3, .section.section-about1 .content h2, .section.section-team h1, .section.section-default h1, .section.section-portal h2, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
   font-family: "Aeonik-Regular", serif;
   font-style: normal;
   font-weight: normal;
@@ -31,7 +31,7 @@
   font-weight: normal;
   src: local("Aeonik-Medium"), url("../fonts/Aeonik-Medium.woff") format("woff");
 }
-.acf-map h3, .searchwp-live-search-result--title a, footer .container .block .agents b, footer .container .block .agents strong, .section.section-news-article .heading p, .section.section-news .block .column p, .section.section-about2 .block h3, .section.section-values h3, .section.section-team .list .column .over .more a, .section.section-agents .block .column h4, .section.section-projectinfo .loc {
+.acf-map h3, .searchwp-live-search-result--title a, footer .container .block .agents b, footer .container .block .agents strong, .section.section-news-article .heading p, .section.section-news .block .column p, .section.section-about2 .block h3, .section.section-values h3, .section.section-team .list .column .over .more a, .section.section-portal .agents h4, .section.section-portal .box .item h3, .section.section-agents .block .column h4, .section.section-projectinfo .loc {
   font-family: "Aeonik-Medium", serif;
   font-style: normal;
   font-weight: normal;
@@ -1363,6 +1363,158 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     width: 33.33%;
   }
 }
+.section.section-portal .text {
+  padding-left: 38px;
+  margin-bottom: 40px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.section.section-portal .text.active:before {
+  height: 100%;
+}
+.section.section-portal .text:before {
+  width: 20px;
+  height: 0%;
+  background: #2BB573;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  clip-path: polygon(0 6%, 58% 0, 58% 94%, 0% 100%);
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .text:before {
+    width: 35px;
+    clip-path: polygon(0 6%, 58% 0, 58% 94%, 0% 100%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .text {
+    margin-bottom: 80px;
+    padding-left: 58px;
+    font-size: 18px;
+    max-width: 580px;
+  }
+}
+.section.section-portal .box .item {
+  margin-top: 40px;
+  border-top: 1px solid #2BB573;
+  padding-top: 40px;
+  margin-left: 38px;
+}
+.section.section-portal .box .item:last-child {
+  border-bottom: 1px solid #2BB573;
+  margin-bottom: 40px;
+  padding-bottom: 60px;
+}
+.section.section-portal .box .item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .box .item h3 {
+    font-size: 20px;
+  }
+}
+.section.section-portal .box .item .link {
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .box .item {
+    font-size: 18px;
+    margin-left: 58px;
+  }
+  .section.section-portal .box .item p {
+    max-width: 564px;
+  }
+}
+.section.section-portal h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal h2 {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+}
+.section.section-portal .heading {
+  padding-left: 38px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.section.section-portal .heading:before {
+  width: 20px;
+  height: 0%;
+  background: #2BB573;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  clip-path: polygon(0 5%, 59% 0, 58% 95%, 0% 100%);
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .heading:before {
+    width: 35px;
+    clip-path: polygon(0 7%, 59% 0, 58% 93%, 0% 100%);
+  }
+}
+.section.section-portal .heading h2 {
+  margin-bottom: 0;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.section.section-portal .heading h2 b, .section.section-portal .heading h2 strong {
+  color: #2BB573;
+}
+.section.section-portal .heading.active:before {
+  height: 100%;
+}
+.section.section-portal .heading.active h2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .heading {
+    max-width: 700px;
+    padding-left: 58px;
+  }
+}
+.section.section-portal .info {
+  margin-left: 38px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .info {
+    font-size: 18px;
+    margin-left: 58px;
+    margin-bottom: 60px;
+  }
+}
+.section.section-portal .agents {
+  margin-bottom: 30px;
+  margin-left: 38px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-portal .agents {
+    margin-left: 58px;
+  }
+}
+.section.section-portal .agents .image {
+  margin-bottom: 15px;
+}
+.section.section-portal .agents .image img {
+  max-width: 107px;
+  width: 100%;
+}
+.section.section-portal .agents h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .section.section-default {
   background: #1A2C56;
   color: #fff;
@@ -1404,42 +1556,6 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 }
 .section.section-default .link {
   margin-top: 30px;
-}
-.section.section-contact h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  line-height: 1.1;
-}
-@media only screen and (min-width: 992px) {
-  .section.section-contact h2 {
-    font-size: 43px;
-    margin-bottom: 30px;
-  }
-}
-.section.section-contact .form .submit {
-  margin-top: 30px;
-}
-.section.section-contact .form .submit .btn {
-  background: #2BB573;
-  color: #fff;
-  border-color: #2BB573;
-  min-width: 170px;
-  border-radius: 10px;
-  padding: 15px 20px;
-}
-.section.section-contact .form .submit .btn:hover {
-  background: #1A2C56;
-  border-color: #1A2C56;
-}
-@media only screen and (min-width: 992px) {
-  .section.section-contact .form .submit .btn {
-    min-width: 210px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .section.section-contact .container.sm {
-    max-width: 870px;
-  }
 }
 .section.section-team.active .container .content:before {
   height: 100%;
