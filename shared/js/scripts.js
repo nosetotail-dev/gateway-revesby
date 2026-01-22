@@ -38,6 +38,7 @@ $(document).ready(function(){
 	initAOS();
 	videoSlider();
 
+	/*
 	$('.accordion .item .heading').click(function(){
 		var i = $(this).parent().attr('data-item');
 		$(this).parent().toggleClass('active');
@@ -59,7 +60,36 @@ $(document).ready(function(){
 				$(this).removeClass('active');
 			}
 		});
+	});*/
+
+	$('.section-location .block ul li').click(function(e){
+		e.preventDefault();
+		var i = $(this).attr('data-item');
+		$('.section-location .block ul li').removeClass('active');
+		$(this).addClass('active');
+
+		if(i == '1'){
+			$('.line').css('height', '20%');
+		} else if(i == '2'){
+			$('.line').css('height', '40%');
+		} else if(i == '3'){
+			$('.line').css('height', '60%');
+		} else if(i == '4'){
+			$('.line').css('height', '80%');
+		} else if(i == '5'){
+			$('.line').css('height', '100%');
+		}
+
+		$('.section-location .imageset .image').each(function (e) {
+			var j = $(this).attr('data-item');
+			if(i == j){
+				$(this).addClass('active');
+			} else{
+				$(this).removeClass('active');
+			}
+		});
 	});
+
 
 	function videoSlider(){
 		var $mainSlider = $('.project-slider .slider');
@@ -107,41 +137,6 @@ $(document).ready(function(){
 	    }
 	}
 
-	$('.section-team .column').click(function(e){
-		e.preventDefault();
-		$(this).toggleClass('active');
-		$(this).find('.text').slideToggle();
-	});
-
-	var options = {
-		useEasing: true, 
-		useGrouping: true, 
-		separator: ',', 
-		decimal: '.', 
-		duration: 1,
-	};
-
-	function counter(){
-		var counterParent = document.getElementById('counter');
-		var children = counterParent.children;
-
-		function countStart(){
-			$('#counter').addClass('active');
-			for (var i = 0; i < children.length; i++) {
-			 	var item = document.getElementById(children[i].id).querySelector('.counter');
-			 	var countValue = item.getAttribute('data-value');
-
-				var c = new countUp.CountUp(item, countValue, options);
-				if (!c.error) {
-					c.start();
-				}
-			}
-		}
-
-		countStart();
-	}
-
-
 
 	//scrollmagic
 
@@ -158,6 +153,12 @@ $(document).ready(function(){
 			triggerElement: ".hero-home",
 		})
 		.setTween(".hero-home .bg video", 0.5, {y: 300})
+		.addTo(controller0);
+
+		new ScrollMagic.Scene({
+			triggerElement: ".hero-home",
+		})
+		.setTween(".hero-home .bg img", 0.5, {y: 300})
 		.addTo(controller0);
 	}
 
@@ -255,6 +256,35 @@ $(document).ready(function(){
 		})
 		.setClassToggle('.section-program .heading', 'active')
 		.addTo(controller1);
+	}
+
+	if($('.section-location').length){
+		var scene = new ScrollMagic.Scene({
+			triggerElement: '.section-location',
+			triggerHook: 0.5,
+		})
+		.setClassToggle('.section-location .heading', 'active')
+		.addTo(controller1);
+	}
+
+	if($('.section-location-sc').length){
+		var scene = new ScrollMagic.Scene({
+			triggerElement: '.section-location-sc',
+			triggerHook: 0.5,
+		})
+		.setClassToggle('.section-location-sc .heading', 'active')
+		.addTo(controller1);
+
+
+		setTimeout(() => {
+			var scene = new ScrollMagic.Scene({
+				triggerElement: '.section-location-sc',
+				triggerHook: 0.5,
+			})
+			.setClassToggle('.section-location-sc .stat', 'active')
+			.addTo(controller1);
+		}, 500);
+		
 	}
 
 });
