@@ -1,4 +1,4 @@
-.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
+.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .section.section-location .block .pathslider ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -43,7 +43,7 @@ footer .container .block .agents b, footer .container .block .agents strong, .se
   font-weight: normal;
   src: local("Aeonik-Bold"), url("../fonts/Aeonik-Bold.woff") format("woff");
 }
-footer .container .block .navi ul li a, footer .container .block h3, .section.section-default h2, .section.section-location-sc .stat .coln h3, .section.section-location .block .path ul li span, .section.section-projectinfo .feature ul li, .section.section-projectinfo .size ul li span, .section.section-home2 .block h3, .section.section-home1 .feature ul li, .hero-project .container .content p.cat span, .hero-project .container h1, .textlink a, .main-menu ul li a, b, strong, .btn {
+footer .container .block .navi ul li a, footer .container .block h3, .section.section-default h2, .section.section-location-sc .stat .coln h3, .section.section-location .block .path ul li span, .section.section-location .block .pathslider ul li span, .section.section-projectinfo .feature ul li, .section.section-projectinfo .size ul li span, .section.section-home2 .block h3, .section.section-home1 .feature ul li, .hero-project .container .content p.cat span, .hero-project .container h1, .textlink a, .main-menu ul li a, b, strong, .btn {
   font-family: "Aeonik-Bold", serif;
   font-style: normal;
   font-weight: normal;
@@ -1637,6 +1637,67 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     align-self: center;
   }
 }
+.section.section-location .block .slider-for {
+  display: none;
+}
+.section.section-location .block .pathslider {
+  position: relative;
+}
+.section.section-location .block .pathslider:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #2BB573;
+  opacity: 0.3;
+}
+.section.section-location .block .pathslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section.section-location .block .pathslider ul li {
+  padding: 10px 0 10px 38px;
+  position: relative;
+  opacity: 0.5;
+}
+.section.section-location .block .pathslider ul li .line {
+  width: 3px;
+  height: 0%;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  background: #2BB573;
+  z-index: 2;
+}
+.section.section-location .block .pathslider ul li span {
+  display: block;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-location .block .pathslider ul li span {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-location .block .pathslider ul li {
+    padding: 15px 0 15px 58px;
+    max-width: 320px;
+  }
+  .section.section-location .block .pathslider ul li:last-child {
+    min-height: 100px;
+  }
+}
+.section.section-location .block .pathslider ul .slick-current li {
+  opacity: 1;
+}
+.section.section-location .block .pathslider ul .slick-current li .line {
+  animation: animateThis 5s ease-in forwards;
+}
 .section.section-location .block .path {
   position: relative;
 }
@@ -1659,7 +1720,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   left: 0;
   top: 0;
   background: #2BB573;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   z-index: 2;
 }
 .section.section-location .block .path ul {
@@ -2627,10 +2688,10 @@ footer .container .block .column {
 
 @-webkit-keyframes animateThis {
   0% {
-    width: 0;
+    height: 0;
   }
   100% {
-    width: 100%;
+    height: 100%;
   }
 }
 

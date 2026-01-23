@@ -51,11 +51,12 @@ get_header(); ?>
 		<div class="block" data-aos="fade">
 			<div class="column">
 				<div class="imageset">
+					<!--
 					<div class="image active" data-item="1"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map1.jpg" alt=""></div>
 					<div class="image" data-item="2"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map2.jpg" alt=""></div>
 					<div class="image" data-item="3">3</div>
 					<div class="image" data-item="4">4</div>
-					<div class="image" data-item="5">5</div>
+					<div class="image" data-item="5">5</div>-->
 					<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map.jpg" alt="">
 				</div>
 			</div>

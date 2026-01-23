@@ -40,7 +40,53 @@ $(document).ready(function(){
 	imageMap();
 
 
+
+	$('.slider-for').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    fade: true,
+	    asNavFor: '.slider-nav ul',
+	    autoplay:true,
+	    autoplaySpeed:4500
+	});
+	$('.slider-nav ul').slick({
+	    slidesToShow: 5,
+	    slidesToScroll: 1,
+	    vertical:true,
+	    asNavFor: '.slider-for',
+	    dots: false,
+	    focusOnSelect: true,
+	    verticalSwiping:true,
+	});
+
+	$('.slider-nav li').on('afterChange', function(event, slick, currentSlide, nextSlide){
+	    alret(currentSlide);
+	});
+
+
 	/*
+	$('.section-location .block ul li').mouseenter(function(e) {
+	    e.preventDefault();
+	    
+	    var i = $(this).attr('data-item'); // Assuming i is 1, 2, 3, 4, or 5
+	    
+	    // Update active state for list items
+	    $('.section-location .block ul li').removeClass('active');
+	    $(this).addClass('active');
+
+	    // Calculate top position: (1-1)*20=0%, (2-1)*20=20%, etc.
+	    var newTop = ((i - 1) * 20) + '%';
+	    $('.line').css('top', newTop);
+
+	    // Update active state for images
+	    $('.section-location .imageset .image').each(function() {
+	        var j = $(this).attr('data-item');
+	        $(this).toggleClass('active', i == j);
+	    });
+	});
+	
+	
 	$('.section-location .block ul li').click(function(e){
 		e.preventDefault();
 		var i = $(this).attr('data-item');
@@ -48,15 +94,15 @@ $(document).ready(function(){
 		$(this).addClass('active');
 
 		if(i == '1'){
-			$('.line').css('height', '20%');
+			$('.line').css('top', '0%');
 		} else if(i == '2'){
-			$('.line').css('height', '40%');
+			$('.line').css('top', '20%');
 		} else if(i == '3'){
-			$('.line').css('height', '60%');
+			$('.line').css('top', '40%');
 		} else if(i == '4'){
-			$('.line').css('height', '80%');
+			$('.line').css('top', '60%');
 		} else if(i == '5'){
-			$('.line').css('height', '100%');
+			$('.line').css('top', '80%');
 		}
 
 		$('.section-location .imageset .image').each(function (e) {
@@ -68,7 +114,8 @@ $(document).ready(function(){
 			}
 		});
 	});
-	*/
+	
+	
 	$('.section-location .block ul li').mouseenter(function(e) {
 	    e.preventDefault();
 	    
@@ -88,6 +135,7 @@ $(document).ready(function(){
 	        $(this).toggleClass('active', i == j);
 	    });
 	});
+	*/
 
 
 
