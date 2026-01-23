@@ -1451,6 +1451,8 @@ b, strong{
 				opacity: 0;
 				left: 0;
 				right: 0;
+				top:0;
+				margin-top: 0;
 				&.active{
 					opacity: 1;
 				}
@@ -1484,6 +1486,17 @@ b, strong{
 
 			.path{
 				position: relative;
+				&:before{
+					content: '';
+					width: 3px;
+					height: 100%;
+					content: '';
+					position: absolute;
+					left: 0;
+					top:0;
+					background: $theme2;
+					opacity: 0.3;
+				}
 				.line{
 					width: 3px;
 					height: 20%;
@@ -1492,7 +1505,8 @@ b, strong{
 					left: 0;
 					top:0;
 					background: $theme2;
-					@extend %transition2;
+					transition: all 0.3s ease;
+					z-index: 2;
 				}
 				ul{
 					list-style: none;
