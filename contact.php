@@ -10,7 +10,7 @@ get_header(); ?>
 			<h2>Brought to you by<br> Gateway Capital</h2>
 		</div>
 		<div class="link">
-			<a href="#" class="btn btn-primary">Enquire</a>
+			<a href="#enquire" class="btn btn-primary">Enquire</a>
 		</div>
 	</div>
 	<div class="bg">
@@ -18,6 +18,7 @@ get_header(); ?>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/bg_contact.jpg" alt="">
 	</div>
 </div>
+<div class="anchor" id="enquire"></div>
 <div class="section section-contact">
 	<div class="container">
 		<div class="block" data-aos="fade">
@@ -29,8 +30,8 @@ get_header(); ?>
 					<p>Gateway Capital is an Australian based investment management business focused on creating core assets in the industrial and logistics sectors through development and active management.</p>
 
 					<div class="link">
-						<a href="#" class="btn btn-primary">Website</a>
-						<div class="textlink"><a href="#">Linkedin</a></div>
+						<a href="https://gatewaycapital.com.au/" target="_blank" class="btn btn-primary">Website</a>
+						<div class="textlink"><a href="https://www.linkedin.com/company/gatewaycapital-aus/?originalSubdomain=au" target="_blank">Linkedin</a></div>
 					</div>
 				</div>
 			</div>

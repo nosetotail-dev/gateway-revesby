@@ -148,3 +148,38 @@ function theme_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'theme_excerpt_length', 999 );
 
+
+
+//Gutenberg blocks
+
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        acf_register_block_type(array(
+            'name'              => 'intro',
+            'title'             => __('Intro Content'),
+            'description'       => __('A custom block.'),
+            'render_template'   => 'blocks/intro.php',
+            'category'          => 'formatting',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'intro', 'content'),
+            'mode'  => 'edit',
+            'supports' => array('mode' => false)
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'portal',
+            'title'             => __('Portal Content'),
+            'description'       => __('A custom block.'),
+            'render_template'   => 'blocks/portal.php',
+            'category'          => 'formatting',
+            'icon'              => 'editor-textcolor',
+            'keywords'          => array( 'portal' ),
+            'mode'  => 'edit',
+            'supports' => array('mode' => false)
+        ));
+
+    }
+}

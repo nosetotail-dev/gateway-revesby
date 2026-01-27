@@ -11,8 +11,8 @@ get_header(); ?>
 			<h2>Prime positioned<br> industrial asset</h2>
 		</div>
 		<div class="link">
-			<a href="#" class="btn btn-primary">Explore More</a>
-			<a href="#" class="btn btn-tertiary">Enquire</a>
+			<a href="#explore" class="btn btn-primary">Explore More</a>
+			<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-tertiary">Enquire</a>
 		</div>
 	</div>
 	<div class="bg">
@@ -20,6 +20,7 @@ get_header(); ?>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/bg_location.jpg" alt="">
 	</div>
 </div>
+<div class="anchor" id="explore"></div>
 <div class="section section-home1">
 	<div class="container">
 		<div class="block" data-aos="fade">
@@ -31,7 +32,7 @@ get_header(); ?>
 					<p>61 Milperra Road sits at the intersection of Sydney’s most critical logistics corridors. Immediate access to Milperra Road, the M5, and Cumberland Highway connects tenants to national distribution networks.</p>
 
 					<div class="textlink">
-						<a href="#">View Location</a>
+						<a href="<?php echo get_home_url(); ?>/location">View Location</a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +88,7 @@ get_header(); ?>
 					</ul>
 				</div>
 				<div class="link">
-					<a href="#" class="btn btn-primary">Enquire</a>
+					<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-primary">Enquire</a>
 				</div>
 				<p class="note">*Approximate distances</p>
 			</div>
@@ -183,8 +184,8 @@ get_header(); ?>
 		<h2>Ready to move forward</h2>
 		<p>Speak with our team about leasing opportunities at Gateway Revesby.</p>
 		<div class="link">
-			<a href="#" class="btn btn-primary">Enquire</a>
-			<a href="#" class="btn btn-tertiary">View Floorplans</a>
+			<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-primary">Enquire</a>
+			<a href="<?php echo get_home_url(); ?>/floorplans" class="btn btn-tertiary">View Floorplans</a>
 		</div>
 	</div>
 </div>

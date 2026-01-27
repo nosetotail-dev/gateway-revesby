@@ -9,7 +9,7 @@
 				<h3>General Enquiries</h3>
 				<p><a href="mailto:enquiries@gatewaycapital.com.au">enquiries@gatewaycapital.com.au</a></p>
 				<ul class="social">
-					<li><a href="#" target="_blank"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/linkedIn.svg" alt=""></a></li>
+					<li><a href="https://www.linkedin.com/company/gatewaycapital-aus/?originalSubdomain=au" target="_blank"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/linkedIn.svg" alt=""></a></li>
 				</ul>
 			</div>
 			<div class="column">
@@ -46,8 +46,8 @@
 		<div class="copy">
 			<p>Copyright 2024 — Gateway Capital Holdings Pty Ltd</p>
 			<ul>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Disclaimer</a></li>
+				<li><a href="https://gatewaycapital.com.au/privacy-policy/" target="_blank">Privacy Policy</a></li>
+				<li><a href="https://gatewaycapital.com.au/disclaimer/" target="_blank">Disclaimer</a></li>
 			</ul>
 		</div>
 	</div>

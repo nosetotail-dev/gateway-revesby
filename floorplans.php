@@ -11,7 +11,7 @@ get_header(); ?>
 			<h2>Warehouse<br> Spaces</h2>
 		</div>
 		<div class="link">
-			<a href="#" class="btn btn-primary">Explore Spaces</a>
+			<a href="#explore" class="btn btn-primary">Explore Spaces</a>
 		</div>
 	</div>
 	<div class="bg">
@@ -19,6 +19,7 @@ get_header(); ?>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/bg_floorplans.jpg" alt="">
 	</div>
 </div>
+<div class="anchor" id="explore"></div>
 <div class="section section-warehouse">
 	<div class="container">
 		<div class="heading">
@@ -36,7 +37,7 @@ get_header(); ?>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png" class="base" alt="">
 	</div>
 	<div class="container">
-		<div class="link"><a href="#" class="btn btn-primary">Download Indicative Racking Layouts</a></div>
+		<div class="link"><a href="<?php the_field('racking_layouts'); ?>" download class="btn btn-primary">Download Indicative Racking Layouts</a></div>
 	</div>
 </div>
 <div class="project-slider">
@@ -62,37 +63,37 @@ get_header(); ?>
 			<div class="content active" data-id="2b">
 				<h2>Level 1<br> Warehouse 2B</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 4,089 sqm*</p>
 			</div>
 			<div class="content" data-id="2c">
 				<h2>Level 1<br> Warehouse 2C</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 3,219 sqm*</p>
 			</div>
 			<div class="content" data-id="2d">
 				<h2>Level 1<br> Warehouse 2D</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 3,233 sqm*</p>
 			</div>
 			<div class="content" data-id="2e">
 				<h2>Level 1<br> Warehouse 2E</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 3,414 sqm*</p>
 			</div>
 			<div class="content" data-id="1c">
 				<h2>Level 1<br> Warehouse 1C</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 3,880 sqm*</p>
 			</div>
 			<div class="content" data-id="1d">
 				<h2>Level 1<br> Warehouse 1D</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 4,569 sqm*</p>
 			</div>
 			<div class="content" data-id="1e">
 				<h2>Level 1<br> Warehouse 1E</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,618 sqm*</p>
+				<p>GLA: 4,603 sqm*</p>
 			</div>
 		</div>
 		
@@ -108,7 +109,7 @@ get_header(); ?>
 			<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan.png" class="base" alt="">
 		</div>
 
-		<div class="link"><a href="#" class="btn btn-primary">Download FULL Floorplan Pack</a></div>
+		<div class="link"><a href="<?php the_field('floorplan_pack'); ?>" class="btn btn-primary" download>Download FULL Floorplan Pack</a></div>
 	</div>
 </div>
 <div class="section section-cta">
@@ -116,8 +117,8 @@ get_header(); ?>
 		<h2>Ready to move forward</h2>
 		<p>Speak with our team about leasing opportunities at Gateway Revesby.</p>
 		<div class="link">
-			<a href="#" class="btn btn-primary">Enquire</a>
-			<a href="#" class="btn btn-tertiary">View Location</a>
+			<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-primary">Enquire</a>
+			<a href="<?php echo get_home_url(); ?>/location" class="btn btn-tertiary">View Location</a>
 		</div>
 	</div>
 </div>

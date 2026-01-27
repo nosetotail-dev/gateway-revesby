@@ -15,7 +15,7 @@ get_header(); ?>
 			<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-tertiary">Get in Touch</a>
 		</div>
 	</div>
-	<div class="bg">
+	<div class="bg bottom">
 		<p class="caption">Artist Impression</p>
 		<video autoplay="1" muted data-keepplaying playsinline preload loop poster="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/video.jpg">
 			<source src="<?php bloginfo ('stylesheet_directory'); ?>/shared/video/video.mp4" type="video/mp4">

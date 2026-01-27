@@ -381,13 +381,13 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .anchor {
   display: block;
   position: relative;
-  top: -83px;
+  top: -84px;
   visibility: hidden;
 }
 
 @media only screen and (min-width: 992px) {
   .anchor {
-    top: -94px;
+    top: -98px;
   }
 }
 .hero-home {
@@ -451,6 +451,9 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   height: 100%;
   object-fit: cover;
   opacity: 0.5;
+}
+.hero-home .bg.bottom img, .hero-home .bg.bottom video {
+  object-position: bottom;
 }
 .hero-home .container {
   position: relative;

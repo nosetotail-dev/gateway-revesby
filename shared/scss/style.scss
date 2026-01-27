@@ -349,13 +349,13 @@ b, strong{
 .anchor {
 	display: block;
 	position: relative;
-	top: -83px;
+	top: -84px;
 	visibility: hidden;
 }
 
 @media only screen and (min-width: $md) {
 	.anchor {
-		top: -94px;
+		top: -98px;
 	}
 }
 
@@ -406,6 +406,11 @@ b, strong{
 			height:100%;
 			object-fit:cover;
 			opacity:0.5;
+		}
+		&.bottom{
+			img, video{
+				object-position: bottom;
+			}
 		}
 	}
 	.container{
@@ -1942,7 +1947,6 @@ b, strong{
 		h1{
 			@include heading1();
 		}
-
 
 		h2{
 			@include heading2();
