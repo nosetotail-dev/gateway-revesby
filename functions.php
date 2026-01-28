@@ -183,3 +183,10 @@ function my_acf_init_block_types() {
 
     }
 }
+
+//acf google map
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyAVeWNOMfMl22nJoTZnKZMDWw47CB2oy5k');
+}
+
+add_action('acf/init', 'my_acf_init');

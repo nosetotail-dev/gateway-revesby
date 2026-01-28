@@ -65,7 +65,7 @@ $(document).ready(function(){
 	});
 
 
-	/*
+	
 	$('.section-location .block ul li').mouseenter(function(e) {
 	    e.preventDefault();
 	    
@@ -85,6 +85,8 @@ $(document).ready(function(){
 	        $(this).toggleClass('active', i == j);
 	    });
 	});
+
+	/*
 	
 	
 	$('.section-location .block ul li').click(function(e){
@@ -288,12 +290,18 @@ $(document).ready(function(){
 	}
 
 	if($('.section-home2').length){
-		var scene = new ScrollMagic.Scene({
-			triggerElement: '.section-home2',
-			triggerHook: 0.5,
-		})
-		.setClassToggle('.section-home2 .heading', 'active')
-		.addTo(controller1);
+		$('.section-home2').each(function() {
+		    // 'this' refers to the specific instance of the block currently being looped
+		    var $thisSection = $(this);
+
+		    var scene = new ScrollMagic.Scene({
+		        triggerElement: this,      // Trigger specifically on this instance
+		        triggerHook: 0.5,
+		    })
+		    // Toggle the class only on the heading INSIDE this specific section
+		    .setClassToggle($thisSection.find('.heading')[0], 'active') 
+		    .addTo(controller1);
+		});
 	}
 
 

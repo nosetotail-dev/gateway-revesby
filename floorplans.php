@@ -29,34 +29,31 @@ get_header(); ?>
 			</h2>
 			<p>Available for lease</p>
 		</div>
+		<div class="link"><a href="<?php the_field('racking_layouts'); ?>" download class="btn btn-primary">Download Indicative Racking Layouts</a></div>
 	</div>
 	<div class="warehouse" data-aos="fade">
 		<div class="image active" data-id="warehouse1"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse1.png" alt=""></div>
 		<div class="image" data-id="warehouse2"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse2.png" alt=""></div>
 		<div id="warehouse"></div>
-		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png" class="base" alt="">
-	</div>
-	<div class="container">
-		<div class="link"><a href="<?php the_field('racking_layouts'); ?>" download class="btn btn-primary">Download Indicative Racking Layouts</a></div>
+		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png?ver=1" class="base" alt="">
 	</div>
 </div>
+<?php 
+$images = get_field('slider');
+if( $images ): ?>
 <div class="project-slider">
 	<div class="slider">
+        <?php foreach( $images as $image ): ?>
 		<div>
 			<div class="image">
-				<p class="caption">Artist Impression</p>
-				<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/slider1.jpg" alt="">
+				<p class="caption"><?php echo esc_html($image['caption']); ?></p>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="">
 			</div>
 		</div>
-		<div>
-			<div class="image">
-				<p class="caption">Artist Impression</p>
-				<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/slider2.jpg" alt="">
-			</div>
-		</div>
+        <?php endforeach; ?>
 	</div>
 </div>
-
+<?php endif; ?>
 <div class="section section-floorplan">
 	<div class="container">
 		<div class="heading">

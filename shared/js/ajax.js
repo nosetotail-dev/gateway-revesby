@@ -8,6 +8,9 @@ jQuery(document).ready(function($) {
 	    var mapArgs = {
 	        zoom        : $el.data('zoom') || 16,
 	        mapTypeId   : google.maps.MapTypeId.ROADMAP,
+            mapTypeControl : false,
+            center: { lat: -33.9523, lng: 151.0146 },
+            zoomControl : true,
 	        styles: [
     {
         "featureType": "all",
@@ -218,7 +221,7 @@ jQuery(document).ready(function($) {
 	    centerMap( map );
 
 	    //marker cluster
-	    markerCluster( map.markers, map )
+	    //markerCluster( map.markers, map )
 
 	    // Return map instance.
 	    return map;
@@ -240,9 +243,9 @@ jQuery(document).ready(function($) {
 	        map: map,
 	        icon: {
 				url: "https://gatewaycapital.com.au/wp-content/themes/gatewaycapital/shared/images/marker.png",
-				scaledSize: new google.maps.Size(50, 50), // scaled size
+				scaledSize: new google.maps.Size(30, 30), // scaled size
 			    origin: new google.maps.Point(0,0), // origin
-			    anchor: new google.maps.Point(25, 25) // anchor
+			    anchor: new google.maps.Point(15, 15) // anchor
 			}
 	    });
 
@@ -314,12 +317,5 @@ jQuery(document).ready(function($) {
     });
 
 
-
-	$(document).on("sf:ajaxfinish", ".searchandfilter", function(){
-		//console.log("ajax complete");
-		$('.acf-map').each(function(){
-	        var map = initMap( $(this) );
-	    });
-	});
 	
 });

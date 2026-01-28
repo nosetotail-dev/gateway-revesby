@@ -70,7 +70,7 @@ get_header(); ?>
 <div class="section section-home2 light">
 	<div class="container">
 		<div class="heading">
-			<h2>Key<br> highlights</h2>
+			<h2>Key<br> Highlights</h2>
 		</div>
 		<div class="block" data-aos="fade-up">
 			<div class="column">
@@ -134,5 +134,56 @@ get_header(); ?>
 	</div>
 </div>
 
+<div class="section section-home2 light">
+	<div class="container">
+		<div class="heading">
+			<h2>Sustainability<br> Features</h2>
+		</div>
+		<div class="block" data-aos="fade-up">
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon12.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Waste<br>Diversion</h3>
+					<p>90% of construction and demolition waste diverted from landfill by reusing the existing building structure and prioritising recycling throughout construction.</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon13.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Responsible <br>Materials</h3>
+					<p>All envelope and interior finishes are responsibly sourced and selected for independently verified environmental certifications, ensuring supply chain transparency and traceability.</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon14.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Healthy Indoor <br>Environment</h3>
+					<p>The building prioritises occupant health through low-emission finishes and on-site testing for VOCs and formaldehyde, improving indoor air quality and reducing exposure to toxins.</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon15.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Low-Carbon & <br>Renewable Energy</h3>
+					<p>The base building operates on 100% renewable energy and includes a 320kW on-site solar PV system, significantly reducing operational carbon emissions.</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon16.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Reduced <br>Embodied Carbon</h3>
+					<p>A Life Cycle Assessment (LCA) guides material selection to lower embodied carbon and reduce environmental impacts across the building’s full lifespan compared to a typical development.</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon17.svg" alt=""></div>
+				<div class="text alt">
+					<h3>Water & System<br>Efficiency</h3>
+					<p>Rainwater is reused for toilet flushing and landscape irrigation, while high-efficiency mechanical, electrical, and lighting systems minimize energy and water consumption. A smart sub-metering platform tracks energy use for continuous performance optimization.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php get_footer();?>

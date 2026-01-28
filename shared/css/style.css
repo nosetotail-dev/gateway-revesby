@@ -1,4 +1,4 @@
-.home-slider .slick-dots li button:after, .home-slider .slick-dots li button:before, footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .section.section-location .block .pathslider ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
+footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .section.section-location .block .pathslider ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -19,7 +19,7 @@
   font-weight: normal;
   src: local("Aeonik-Regular"), url("../fonts/Aeonik-Regular.woff") format("woff");
 }
-.section.section-default h1, .section.section-floorplan h2, .section.section-warehouse h2, .section.section-cta h2, .section.section-location-sc h2, .section.section-location h2, .section.section-portal h2, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
+.section.section-default h1, .section.section-floorplan h2, .section.section-warehouse h2, .section.section-cta h2, .section.section-location-sc h2, .section.section-location h2, .section.section-portal h2, .section.section-agents h2, .section.section-contact h2, .section.section-program h2, .section.section-projectinfo h2, .section.section-home2 .block h3.alt, .section.section-home2 h2, .section.section-home1 h2, .hero-project .container .content p, .hero-project .container h1, #header .desktop-menu ul li a, body {
   font-family: "Aeonik-Regular", serif;
   font-style: normal;
   font-weight: normal;
@@ -671,6 +671,9 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   top: 50%;
   margin-top: -14px;
 }
+.project-slider .slick-arrow:hover {
+  cursor: pointer;
+}
 .project-slider .slick-prev {
   transform: scaleX(-1);
   left: 10px;
@@ -947,6 +950,14 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 @media only screen and (min-width: 768px) and (min-width: 992px) {
   .section.section-home2 .block .column {
     width: 33.33%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section.section-home2 .block .column p {
+    max-width: 270px;
+  }
+  .section.section-home2 .block .column .alt p {
+    max-width: 305px;
   }
 }
 .section.section-projectinfo {
@@ -1597,6 +1608,15 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .section.section-location .link {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+.section.section-location .acf-map {
+  height: 300px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-location .acf-map {
+    height: 600px;
+  }
 }
 .section.section-location .imageset {
   position: relative;
@@ -2455,110 +2475,6 @@ footer .container .block .column {
     padding-right: 0;
     width: 199px;
   }
-}
-
-.home-slider {
-  font-size: 0;
-  position: relative;
-  color: #fff;
-}
-.home-slider:before {
-  width: 100%;
-  height: 50%;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  opacity: 0.5;
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(26, 44, 86) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(26, 44, 86) 100%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(26, 44, 86) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#1a2c56",GradientType=1);
-}
-.home-slider .slider__counter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  font-size: 14px;
-  padding: 20px;
-  width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .home-slider .slider__counter {
-    padding: 30px;
-  }
-}
-.home-slider .slick-dots {
-  position: absolute;
-  right: 0;
-  top: 8px;
-  z-index: 3;
-  width: calc(100% - 70px);
-  list-style: none;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-}
-.home-slider .slick-dots li {
-  width: 33.33%;
-  opacity: 1;
-  margin: 0;
-  padding: 0 3px;
-}
-@media only screen and (min-width: 992px) {
-  .home-slider .slick-dots li {
-    padding: 0 8px;
-  }
-}
-.home-slider .slick-dots li.slick-active button:before {
-  animation: animateThis 5s ease-in forwards;
-}
-.home-slider .slick-dots li button {
-  width: 100%;
-  background: transparent;
-  border-radius: 0;
-  opacity: 1;
-  height: 3px;
-  position: relative;
-}
-.home-slider .slick-dots li button:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background: #fff;
-}
-.home-slider .slick-dots li button:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 1px;
-  width: 100%;
-  height: 1px;
-  background: #fff;
-}
-@media only screen and (min-width: 992px) {
-  .home-slider .slick-dots {
-    padding: 30px;
-  }
-}
-.home-slider .image {
-  height: 320px;
-}
-@media only screen and (min-width: 992px) {
-  .home-slider .image {
-    height: 100vh;
-  }
-}
-.home-slider .image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .image-full .image img {

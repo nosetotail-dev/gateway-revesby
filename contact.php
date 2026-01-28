@@ -18,7 +18,6 @@ get_header(); ?>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/bg_contact.jpg" alt="">
 	</div>
 </div>
-<div class="anchor" id="enquire"></div>
 <div class="section section-contact">
 	<div class="container">
 		<div class="block" data-aos="fade">
@@ -41,6 +40,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<div class="anchor" id="enquire"></div>
 
 <?php include('agents.php'); ?>
 <?php get_footer();?>

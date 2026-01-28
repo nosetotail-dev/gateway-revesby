@@ -604,6 +604,9 @@ b, strong{
 		transition: all .3s ease;
 		top:50%;
 		margin-top: -14px;
+		&:hover{
+			cursor: pointer;
+		}
 	}
 	.slick-prev {
 		transform:scaleX(-1);
@@ -801,6 +804,9 @@ b, strong{
 			margin-bottom: -30px;
 			h3{
 				@include heading2();
+				&.alt{
+					@extend %font1;
+				}
 			}
 			.column{
 				margin-bottom: 30px;
@@ -841,6 +847,14 @@ b, strong{
 					margin-bottom: 70px;
 					@media only screen and (min-width: $md) {
 						width: 33.33%;
+					}
+					p{
+						max-width: 270px;
+					}
+					.alt{
+						p{
+							max-width: 305px;
+						}
 					}
 				}
 			}
@@ -1446,6 +1460,15 @@ b, strong{
 		.link{
 			margin-bottom: 20px;
 			margin-top: 20px;
+		}
+
+
+		.acf-map{
+			height:300px;
+			overflow:hidden;
+			@media only screen and (min-width: $md) {
+				height:600px;
+			}
 		}
 
 		.imageset{
@@ -2241,105 +2264,6 @@ footer{
 	}
 }
 
-.home-slider{
-	font-size:0;
-	position:relative;
-	color:#fff;
-	&:before{
-		width:100%;
-		height:50%;
-		content:'';
-		position:absolute;
-		left:0;
-		top:0;
-		z-index:1;
-		opacity:0.5;
-		background: rgb(255,255,255);
-		background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(26,44,86,1) 100%);
-		background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(26,44,86,1) 100%);
-		background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(26,44,86,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#1a2c56",GradientType=1);
-	}
-	.slider__counter{
-		position:absolute;
-		left:0;
-		top:0;
-		z-index:2;
-		font-size: 14px;
-		padding:20px;
-		width:100%;
-		@media only screen and (min-width: $md) {
-			padding: 30px;
-		}
-	}
-	.slick-dots{
-		position:absolute;
-		right:0;
-		top:8px;
-		z-index:3;
-		width:calc(100% - 70px);
-		list-style:none;
-		margin:0;
-		padding:20px;
-		display:flex;
-		li{
-			width:33.33%;
-			opacity:1;
-			margin:0;
-			padding: 0 3px;
-			@media only screen and (min-width: $md) {
-				padding: 0 8px;
-			}
-			&.slick-active{
-				button:before{
-					animation: animateThis 5s ease-in forwards;
-				}
-			}
-			button{
-				width:100%;
-				background:transparent;
-				border-radius:0;
-				opacity:1;
-				height:3px;
-				position:relative;
-				&:before{
-					content:'';
-					position:absolute;
-					left:0;
-					top:0;
-					width:0;
-					height:100%;
-					background:#fff;
-					@extend %transition;
-				}
-				&:after{
-					content:'';
-					position:absolute;
-					left:0;
-					top:1px;
-					width:100%;
-					height:1px;
-					background:#fff;
-					@extend %transition;
-				}
-			}
-		}
-		@media only screen and (min-width: $md) {
-			padding: 30px;
-		}
-	}
-	.image{
-		height:320px;
-		@media only screen and (min-width: $md) {
-			height:100vh;
-		}
-		img{
-			width:100%;
-			height:100%;
-			object-fit:cover;
-		}
-	}
-}
 
 .image-full{
 	.image{

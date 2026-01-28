@@ -32,7 +32,7 @@ get_header(); ?>
 					<p>61 Milperra Road sits at the intersection of Sydney’s most critical logistics corridors. Immediate access to Milperra Road, the M5, and Cumberland Highway connects tenants to national distribution networks.</p>
 
 					<div class="textlink">
-						<a href="<?php echo get_home_url(); ?>/location">View Location</a>
+						<a href="#location">View Location</a>
 					</div>
 				</div>
 			</div>
@@ -40,6 +40,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<div class="anchor" id="location"></div>
 <div class="section section-location pb-0">
 	<div class="container">
 		<div class="heading">
@@ -51,15 +52,19 @@ get_header(); ?>
 
 		<div class="block" data-aos="fade">
 			<div class="column">
+				<?php if( have_rows('map') ): ?>
+				    <div class="acf-map" data-zoom="16">
+				        <?php while ( have_rows('map') ) : the_row(); 
+			            $marker = get_sub_field('marker');
+			            ?>
+				        <div class="marker" data-lat="<?php echo esc_attr($marker['lat']); ?>" data-lng="<?php echo esc_attr($marker['lng']); ?>"></div>
+				    	<?php endwhile; ?>
+				    </div>
+				<?php endif; ?>
+				<!--
 				<div class="imageset">
-					<!--
-					<div class="image active" data-item="1"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map1.jpg" alt=""></div>
-					<div class="image" data-item="2"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map2.jpg" alt=""></div>
-					<div class="image" data-item="3">3</div>
-					<div class="image" data-item="4">4</div>
-					<div class="image" data-item="5">5</div>-->
 					<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/revesby_map.jpg" alt="">
-				</div>
+				</div>-->
 			</div>
 			<div class="column">
 				<div class="path">
@@ -106,31 +111,31 @@ get_header(); ?>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon7.svg" alt=""></div>
 				<div class="text">
-					<h3>Located in a premier industrial location</h3>
+					<h3 class="alt">Located in a premier industrial location</h3>
 				</div>
 			</div>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon8.svg" alt=""></div>
 				<div class="text">
-					<h3>17km* West of Sydney Airport & Port Botany</h3>
+					<h3 class="alt">17km* West of Sydney Airport & Port Botany</h3>
 				</div>
 			</div>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon9.svg" alt=""></div>
 				<div class="text">
-					<h3>22km* from the Sydney CBD</h3>
+					<h3 class="alt">22km* from the Sydney CBD</h3>
 				</div>
 			</div>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon10.svg" alt=""></div>
 				<div class="text">
-					<h3>Immediate access to Milperra Road, South-Western Motorway and Cumberland Highway</h3>
+					<h3 class="alt">Immediate access to Milperra Road, South-Western Motorway and Cumberland Highway</h3>
 				</div>
 			</div>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon11.svg" alt=""></div>
 				<div class="text">
-					<h3>Serviced by multiple surrounding cafes</h3>
+					<h3 class="alt">Serviced by multiple surrounding cafes</h3>
 				</div>
 			</div>
 		</div>
