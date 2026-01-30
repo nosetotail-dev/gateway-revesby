@@ -61,10 +61,34 @@ $(document).ready(function(){
 	});
 
 	$('.slider-nav li').on('afterChange', function(event, slick, currentSlide, nextSlide){
-	    alret(currentSlide);
+	    //alret(currentSlide);
 	});
 
 
+	$('.timeline-slider .wrap div').click(function(e) {
+	    e.preventDefault();
+	    
+	    const $items = $('.timeline-slider .wrap div');
+	    const $navItems = $('.timeline-slider-nav ul li');
+	    const index = $(this).index(); // Get 0-based position
+	    const total = $items.length - 1;
+	    
+	    // 1. Toggle active state on the clicked dots
+	    $items.removeClass('active');
+	    $(this).addClass('active');
+
+	    // 2. Calculate and set the line width
+	    const percentage = (index / total) * 100;
+	    $('.timeline-slider-nav .line').css('width', `${percentage}%`);
+
+	    // 3. Update nav dots after the transition
+	    setTimeout(() => {
+	        $navItems.each(function(i) {
+	            // Add 'active' if this dot's index is less than or equal to clicked index
+	            $(this).toggleClass('active', i <= index);
+	        });
+	    }, 300);
+	});
 	
 	$('.section-location .block ul li').mouseenter(function(e) {
 	    e.preventDefault();

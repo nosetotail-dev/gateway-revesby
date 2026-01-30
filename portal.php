@@ -30,13 +30,14 @@ get_header(); ?>
 			<div class="info">
 				<p>A register of project enquiries and complaints will be maintained for the development. In accordance with project requirements, a summary register will be made available on a quarterly basis.</p>
 			</div>
+			<!--
 			<div class="agents" data-aos="fade">
 				<div class="image"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/agent3.png" alt=""></div>
 				<h4>Riley Sampson</h4>
 				<p>Development Manager<br>
 				+61 487 319 800<br>
 				riley.sampson@gatewaycapital.com.au</p>
-			</div>
+			</div>-->
 		</div>
 
 	</div>

@@ -40,7 +40,7 @@ get_header(); ?>
 			<div class="column">
 				<div class="feature">
 					<ul>
-						<li>3,000 sqm*- 28,700 sqm* GLA</li>
+						<li><a href="<?php echo get_home_url(); ?>/floorplans">3,000 sqm*- 28,700 sqm* GLA</a></li>
 						<li>Q4 2027 Lease Commencement</li>
 						<li>24/7 B-DOUBLE ACCESS</li>
 					</ul>

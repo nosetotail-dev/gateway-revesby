@@ -35,7 +35,7 @@ get_header(); ?>
 		<div class="image active" data-id="warehouse1"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse1.png" alt=""></div>
 		<div class="image" data-id="warehouse2"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse2.png" alt=""></div>
 		<div id="warehouse"></div>
-		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png?ver=1" class="base" alt="">
+		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png?ver=1.1" class="base" alt="">
 	</div>
 </div>
 <?php 
@@ -60,37 +60,51 @@ if( $images ): ?>
 			<div class="content active" data-id="2b">
 				<h2>Level 1<br> Warehouse 2B</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,089 sqm*</p>
+				<p>WAREHOUSE: 3,733 sqm<br>
+				OFFICE: 356 sqm<br>
+				GLA: 4,089 sqm</p>
 			</div>
 			<div class="content" data-id="2c">
 				<h2>Level 1<br> Warehouse 2C</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 3,219 sqm*</p>
+				<p>WAREHOUSE: 2,863 sqm<br>
+				OFFICE: 356 sqm<br>
+				GLA: 3,219 sqm</p>
 			</div>
 			<div class="content" data-id="2d">
 				<h2>Level 1<br> Warehouse 2D</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 3,233 sqm*</p>
+				<p>WAREHOUSE: 2,878 sqm<br>
+				OFFICE: 355 sqm<br>
+				GLA: 3,233 sqm</p>
 			</div>
 			<div class="content" data-id="2e">
 				<h2>Level 1<br> Warehouse 2E</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 3,414 sqm*</p>
+				<p>WAREHOUSE: 3,059 sqm<br>
+				OFFICE: 355 sqm<br>
+				GLA: 3,414 sqm</p>
 			</div>
 			<div class="content" data-id="1c">
 				<h2>Level 1<br> Warehouse 1C</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 3,880 sqm*</p>
+				<p>WAREHOUSE: 3,521 sqm<br>
+				OFFICE: 359 sqm<br>
+				GLA: 3,880 sqm</p>
 			</div>
 			<div class="content" data-id="1d">
 				<h2>Level 1<br> Warehouse 1D</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,569 sqm*</p>
+				<p>WAREHOUSE: 4,210 sqm<br>
+				OFFICE: 359 sqm<br>
+				GLA: 4,569 sqm</p>
 			</div>
 			<div class="content" data-id="1e">
 				<h2>Level 1<br> Warehouse 1E</h2>
 				<p>Flexible Sizing available</p>
-				<p>GLA: 4,603 sqm*</p>
+				<p>WAREHOUSE 1C 4,280 m²<br>
+				OFFICE 1C 323 m²<br>
+				GLA: 4,603 sqm</p>
 			</div>
 		</div>
 		

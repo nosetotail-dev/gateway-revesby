@@ -12,7 +12,7 @@ get_header(); ?>
 			<p>Revesby, NSW</p>
 		</div>
 	</div>
-	<div class="bg">
+	<div class="bg bottom">
 		<p class="caption">Artist Impression</p>
 		<video autoplay="1" muted data-keepplaying playsinline preload loop poster="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/video.jpg">
 			<source src="<?php bloginfo ('stylesheet_directory'); ?>/shared/video/video.mp4" type="video/mp4">
@@ -104,7 +104,7 @@ get_header(); ?>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon5.svg" alt=""></div>
 				<div class="text">
-					<h3>4-star</h3>
+					<h3>4-star Green Star</h3>
 					<p>Targeting a 4-Star Green Star sustainability rating</p>
 				</div>
 			</div>
@@ -127,8 +127,39 @@ get_header(); ?>
 		<div class="text">
 			<p>From approval to completion.</p>
 
-			<div class="image" data-aos="fade-up">
-				<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/program.svg" alt="">
+			<div class="timeline-slider" data-aos="fade-up">
+				<div class="wrap">
+					<div class="active" data-item="1">
+						<p class="cat">Jun 2025</p>
+						<p>Development<br> Approval</p>
+					</div>
+					<div data-item="2">
+						<p class="cat">Jan 2026</p>
+						<p>Construction <br>Commenced</p>
+					</div>
+					<div data-item="3">
+						<p class="cat">Early Access Available</p>
+						<p>Tenant <br>Fitout</p>
+					</div>
+					<div data-item="4">
+						<p class="cat">Q4 2027</p>
+						<p>Practical <br>Completion</p>
+					</div>
+					<div data-item="5">
+						<p class="cat">Q4 2027</p>
+						<p>Lease <br>Commencement</p>
+					</div>
+				</div>
+				<div class="timeline-slider-nav">
+					<div class="line"></div>
+					<ul>
+						<li class="active" data-item="1"><div class="circle"></div></li>
+						<li data-item="2"><div class="circle"></div></li>
+						<li data-item="3"><div class="circle"></div></li>
+						<li data-item="4"><div class="circle"></div></li>
+						<li data-item="5"><div class="circle"></div></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -179,7 +210,7 @@ get_header(); ?>
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon17.svg" alt=""></div>
 				<div class="text alt">
 					<h3>Water & System<br>Efficiency</h3>
-					<p>Rainwater is reused for toilet flushing and landscape irrigation, while high-efficiency mechanical, electrical, and lighting systems minimize energy and water consumption. A smart sub-metering platform tracks energy use for continuous performance optimization.</p>
+					<p>Rainwater is reused for toilet flushing and landscape irrigation, while high-efficiency mechanical, electrical, and lighting systems minimize energy and water consumption. A smart sub-metering platform tracks energy use for continuous performance optimisation.</p>
 				</div>
 			</div>
 		</div>

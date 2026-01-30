@@ -47,7 +47,7 @@ get_header(); ?>
 			<h2>Connected to<br> everything</h2>
 		</div>
 		<div class="text">
-			<p>Direct routes to Cumberland Highway and beyond—positioning you 17km* west of Sydney Airport and Port Botany, and 22km* from the Sydney CBD.</p>
+			<p>Direct routes to Cumberland Highway and beyond, positioning you 17km* west of Sydney Airport and Port Botany, and 22km* from the Sydney CBD.</p>
 		</div>
 
 		<div class="block" data-aos="fade">
@@ -123,7 +123,7 @@ get_header(); ?>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon9.svg" alt=""></div>
 				<div class="text">
-					<h3 class="alt">22km* from the Sydney CBD</h3>
+					<h3 class="alt">22km* from Sydney CBD</h3>
 				</div>
 			</div>
 			<div class="column">

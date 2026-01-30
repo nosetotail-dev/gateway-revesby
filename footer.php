@@ -57,7 +57,13 @@
 <script src="<?php bloginfo ('stylesheet_directory'); ?>/shared/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo ('stylesheet_directory'); ?>/shared/js/image-map-pro.min.js"></script>
 <script src="<?php bloginfo ('stylesheet_directory'); ?>/shared/js/libs.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVeWNOMfMl22nJoTZnKZMDWw47CB2oy5k&callback=Function.prototype"></script>
+
+<script 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVeWNOMfMl22nJoTZnKZMDWw47CB2oy5k&callback=initMap&loading=async" 
+  async 
+  defer>
+</script>
+
 <script src="<?php bloginfo ('stylesheet_directory'); ?>/shared/js/ajax.js?ver=<?php echo time(); ?>"></script>
 <script src="<?php bloginfo ('stylesheet_directory'); ?>/shared/js/scripts.js?ver=<?php echo time(); ?>"></script>
 <?php wp_footer(); ?>

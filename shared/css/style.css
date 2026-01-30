@@ -1,9 +1,9 @@
-footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .section.section-location .block .pathslider ul li, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
+footer .container .logo svg, footer .container .logo img, .section.section-floorplan .floorplan .image, .section.section-warehouse .warehouse .image, .section.section-location .block .path ul li, .section.section-location .block .pathslider ul li, .section.section-program .timeline-slider .timeline-slider-nav-mobile ul li .circle, .section.section-program .timeline-slider .timeline-slider-nav ul li .circle, .section.section-program .timeline-slider .wrap div:before, .textlink a:before, .main-menu ul li a:before, #header .logo svg, #header .logo img, #header, .btn, a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.main-menu {
+.section.section-program .timeline-slider .timeline-slider-nav-mobile .line, .section.section-program .timeline-slider .timeline-slider-nav .line, .main-menu {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -43,7 +43,7 @@ footer .container .block .agents b, footer .container .block .agents strong, .se
   font-weight: normal;
   src: local("Aeonik-Bold"), url("../fonts/Aeonik-Bold.woff") format("woff");
 }
-footer .container .block .navi ul li a, footer .container .block h3, .section.section-default h2, .section.section-location-sc .stat .coln h3, .section.section-location .block .path ul li span, .section.section-location .block .pathslider ul li span, .section.section-projectinfo .feature ul li, .section.section-projectinfo .size ul li span, .section.section-home2 .block h3, .section.section-home1 .feature ul li, .hero-project .container .content p.cat span, .hero-project .container h1, .textlink a, .main-menu ul li a, b, strong, .btn {
+footer .container .block .navi ul li a, footer .container .block h3, .section.section-default h2, .section.section-location-sc .stat .coln h3, .section.section-location .block .path ul li span, .section.section-location .block .pathslider ul li span, .section.section-program .timeline-slider .wrap div, .section.section-projectinfo .feature ul li, .section.section-projectinfo .size ul li span, .section.section-home2 .block h3, .section.section-home1 .feature ul li, .hero-project .container .content p.cat span, .hero-project .container h1, .textlink a, .main-menu ul li a, b, strong, .btn {
   font-family: "Aeonik-Bold", serif;
   font-style: normal;
   font-weight: normal;
@@ -560,6 +560,9 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   object-fit: cover;
   opacity: 0.5;
 }
+.hero-project .bg.bottom img, .hero-project .bg.bottom video {
+  object-position: bottom;
+}
 .hero-project .container {
   position: relative;
   z-index: 2;
@@ -631,6 +634,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 @media only screen and (min-width: 992px) {
   .project-slider .slider .image {
@@ -788,6 +792,11 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   display: flex;
   align-items: center;
   line-height: 1.3;
+}
+.section.section-home1 .feature ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
 }
 .section.section-home1 .feature ul li:last-child {
   margin-bottom: 0;
@@ -1106,6 +1115,11 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   align-items: center;
   line-height: 1.3;
 }
+.section.section-projectinfo .feature ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
 .section.section-projectinfo .feature ul li:last-child {
   margin-bottom: 0;
 }
@@ -1124,8 +1138,8 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   }
 }
 .section.section-program {
-  background: #1A2C56;
-  color: #fff;
+  border-top: 1px solid #1A2C56;
+  border-bottom: 1px solid #1A2C56;
 }
 .section.section-program h2 {
   font-size: 32px;
@@ -1205,6 +1219,177 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 }
 .section.section-program .image img {
   width: 100%;
+}
+.section.section-program .timeline-slider {
+  margin-top: 40px;
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+.section.section-program .timeline-slider .wrap:before {
+  width: 3px;
+  height: 84%;
+  content: "";
+  position: absolute;
+  top: 10px;
+  background: #ddd;
+  border-radius: 3px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap:before {
+    width: 100%;
+    height: 6px;
+    bottom: 17px;
+    top: auto;
+  }
+}
+.section.section-program .timeline-slider .wrap div {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+}
+.section.section-program .timeline-slider .wrap div:before {
+  width: 13px;
+  height: 13px;
+  background: #2BB573;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  left: -5px;
+  top: 10px;
+  position: absolute;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap div:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap div {
+    padding-left: 0;
+    padding-bottom: 42px;
+  }
+}
+.section.section-program .timeline-slider .wrap div:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap div p {
+    opacity: 0.44;
+  }
+}
+.section.section-program .timeline-slider .wrap div.active:before {
+  background: #2BB573;
+}
+.section.section-program .timeline-slider .wrap div.active p {
+  opacity: 1;
+}
+.section.section-program .timeline-slider .wrap div .cat {
+  display: inline-block;
+  background: #2BB573;
+  color: #fff;
+  padding: 3px 10px;
+  margin-bottom: 5px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .wrap div {
+    font-size: 18px;
+  }
+}
+.section.section-program .timeline-slider .timeline-slider-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .timeline-slider-nav {
+    display: block;
+  }
+}
+.section.section-program .timeline-slider .timeline-slider-nav .line {
+  width: 0%;
+  height: 6px;
+  position: absolute;
+  bottom: 17px;
+  background: #2BB573;
+  border-radius: 3px;
+}
+.section.section-program .timeline-slider .timeline-slider-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .timeline-slider-nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.section.section-program .timeline-slider .timeline-slider-nav ul li .circle {
+  width: 26px;
+  height: 26px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+.section.section-program .timeline-slider .timeline-slider-nav ul li.active .circle {
+  background: #2BB573;
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .timeline-slider-nav-mobile {
+    display: none;
+  }
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile .line {
+  width: 3px;
+  height: 0%;
+  position: absolute;
+  top: 10px;
+  background: #2BB573;
+  border-radius: 3px;
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -7px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-program .timeline-slider .timeline-slider-nav-mobile ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile ul li {
+  height: 103px;
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile ul li .circle {
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+.section.section-program .timeline-slider .timeline-slider-nav-mobile ul li.active .circle {
+  background: #2BB573;
 }
 .section.section-contact h2 {
   font-size: 32px;
@@ -1509,6 +1694,9 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     font-size: 18px;
     margin-left: 58px;
     margin-bottom: 60px;
+  }
+  .section.section-portal .info p {
+    max-width: 820px;
   }
 }
 .section.section-portal .agents {
@@ -2075,12 +2263,11 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   left: 0;
   top: 0;
   content: "";
-  clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
+  clip-path: polygon(0 6%, 58% 0, 58% 94%, 0% 100%);
 }
 @media only screen and (min-width: 992px) {
   .section.section-floorplan .heading:before {
     width: 35px;
-    clip-path: polygon(0 10%, 58% 0, 58% 90%, 0% 100%);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -2094,7 +2281,11 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   position: relative;
   max-width: 910px;
   margin: 0 auto;
-  margin-top: -50px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-floorplan .floorplan {
+    margin-top: -50px;
+  }
 }
 .section.section-floorplan .floorplan .base {
   position: absolute;
@@ -2612,6 +2803,13 @@ footer .container .block .column {
   100% {
     height: 100%;
   }
+}
+.gm-style-cc {
+  display: none !important;
+}
+
+.gmnoprint a, .gmnoprint span {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
