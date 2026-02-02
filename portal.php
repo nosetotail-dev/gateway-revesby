@@ -6,7 +6,7 @@ get_header(); ?>
 <div class="hero-home sm">
 	<div class="container">
 		<div data-aos="fade-left">
-			<h1>61 MILPERRA ROAD</h1>
+			<h1>Revesby Rise</h1>
 			<h2>Project<br> Portal</h2>
 		</div>
 		<div class="link">

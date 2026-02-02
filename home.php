@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="hero-home">
 	<div class="container">
 		<div data-aos="fade-left">
-			<h1>61 Milperra Road, Revesby</h1>
+			<h1>Revesby Rise</h1>
 			<h2>Your <b>Gateway</b> to Revesby and beyond.</h2>
 		</div>
 		<div class="link">
@@ -30,7 +30,7 @@ get_header(); ?>
 					<h2>A Purpose-Built<br> Industrial Space</h2>
 				</div>
 				<div class="text">
-					<p>61 Milperra Road is a high-quality industrial asset positioned in Revesby, just 17km west of the Sydney CBD and Port Botany. The facility offers flexible warehouse space within one of Sydney’s most established logistics hubs, with immediate access to major transport corridors and strategic distribution networks.</p>
+					<p>Revesby Rise is a high-quality industrial asset positioned in Revesby, just 17km west of the Sydney CBD and Port Botany. The facility offers flexible warehouse space within one of Sydney’s most established logistics hubs, with immediate access to major transport corridors and strategic distribution networks.</p>
 
 					<div class="textlink">
 						<a href="<?php echo get_home_url(); ?>/asset-overview">Explore More</a>

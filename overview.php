@@ -8,8 +8,8 @@ get_header(); ?>
 	<div class="container">
 		<div class="content" data-aos="fade-left">
 			<p class="cat"><span>Asset Overview</span></p>
-			<h1>61 Milperra Road</h1>
-			<p>Revesby, NSW</p>
+			<h1>Revesby Rise</h1>
+			<p>61 Milperra Road, Revesby, NSW</p>
 		</div>
 	</div>
 	<div class="bg bottom">
@@ -28,7 +28,7 @@ get_header(); ?>
 		<div class="block">
 			<div class="column">
 				<div class="text">
-					<p>61 Milperra Road provides an opportunity to occupy a state-of-the-art warehouse, in one of Sydney’s most established logistics hubs.</p>
+					<p>Revesby Rise provides an opportunity to occupy a state-of-the-art warehouse, in one of Sydney’s most established logistics hubs.</p>
 				</div>
 				<div class="size">
 					<ul>
