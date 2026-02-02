@@ -237,7 +237,7 @@ function initMarker( $marker, map ) {
         position : latLng,
         map: map,
         icon: {
-            url: "https://gatewaycapital.com.au/wp-content/themes/gatewaycapital/shared/images/marker.png",
+            url: "/wp-content/themes/revesby/shared/images/marker.png",
             scaledSize: new google.maps.Size(30, 30),
             origin: new google.maps.Point(0,0),
             anchor: new google.maps.Point(15, 15)
