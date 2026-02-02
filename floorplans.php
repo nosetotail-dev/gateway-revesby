@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="hero-home sm">
 	<div class="container">
 		<div data-aos="fade-left">
-			<h1>Warehouse Spaces</h1>
+			<h1>Revesby Rise</h1>
 			<h2>Warehouse<br> Spaces</h2>
 		</div>
 		<div class="link">
@@ -117,7 +117,7 @@ if( $images ): ?>
 			<div class="image" data-id="1d"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_1d.png" alt=""></div>
 			<div class="image" data-id="1e"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_1e.png" alt=""></div>
 			<div id="floorplan"></div>
-			<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan.png" class="base" alt="">
+			<img src="<?php echo the_field('floorplan_image'); ?>" class="base" alt="">
 		</div>
 
 		<div class="link"><a href="<?php the_field('floorplan_pack'); ?>" class="btn btn-primary" download>Download FULL Floorplan Pack</a></div>

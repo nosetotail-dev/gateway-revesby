@@ -2156,10 +2156,16 @@ b, strong{
 	}
 
 	&.section-default{
-		background:$theme1;
-		color:#fff;
 		h1{
 			@include heading1();
+		}
+
+		a{
+			color: $theme1;
+			&:hover{
+				color: $theme1;
+				text-decoration: underline;
+			}
 		}
 
 		h2{
@@ -2173,6 +2179,7 @@ b, strong{
 
 		ul, ol{
 			margin-bottom: 10px;
+			margin-left: -23px;
 			li{
 				margin-bottom: 5px;
 			}

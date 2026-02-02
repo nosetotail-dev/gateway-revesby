@@ -2313,10 +2313,6 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .section.section-floorplan .link {
   margin-top: 30px;
 }
-.section.section-default {
-  background: #1A2C56;
-  color: #fff;
-}
 .section.section-default h1 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -2327,6 +2323,13 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     font-size: 43px;
     margin-bottom: 30px;
   }
+}
+.section.section-default a {
+  color: #1A2C56;
+}
+.section.section-default a:hover {
+  color: #1A2C56;
+  text-decoration: underline;
 }
 .section.section-default h2 {
   font-size: 22px;
@@ -2348,6 +2351,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 }
 .section.section-default ul, .section.section-default ol {
   margin-bottom: 10px;
+  margin-left: -23px;
 }
 .section.section-default ul li, .section.section-default ol li {
   margin-bottom: 5px;

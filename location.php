@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="hero-home">
 	<div class="container">
 		<div data-aos="fade-left">
-			<h1>61 Milperra Road, Revesby</h1>
+			<h1>Revesby Rise</h1>
 			<h2>Prime positioned<br> industrial asset</h2>
 		</div>
 		<div class="link">
@@ -29,7 +29,7 @@ get_header(); ?>
 					<h2>At the Centre of<br> Distribution</h2>
 				</div>
 				<div class="text">
-					<p>61 Milperra Road sits at the intersection of Sydney’s most critical logistics corridors. Immediate access to Milperra Road, the M5, and Cumberland Highway connects tenants to national distribution networks.</p>
+					<p>Revesby Rise is situated at the intersection of Sydney’s most critical logistics corridors. Immediate access to Milperra Road, the M5, and Cumberland Highway connects tenants to national distribution networks.</p>
 
 					<div class="textlink">
 						<a href="#location">View Location</a>
@@ -142,7 +142,7 @@ get_header(); ?>
 	</div>
 </div>
 <div class="image-full" data-aos="fade">
-	<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/map.jpg" alt="">
+	<img src="<?php echo the_field('map_image'); ?>" alt="">
 </div>
 <div class="section section-location-sc">
 	<div class="container">
@@ -153,7 +153,7 @@ get_header(); ?>
 				</div>
 
 				<div class="text">
-					<p>Revesby is perfectly located in close 
+					<p>Revesby Rise is perfectly located in close 
 					proximity to national distribution centres 
 					and store networks.</p>
 				</div>

@@ -7,7 +7,7 @@
     <div class="item" data-aos="fade">
         <?php echo $content; ?>
         <div class="link">
-            <a href=" <?php echo $download; ?>" class="btn btn-primary" download>Download</a>
+            <a href=" <?php echo $download; ?>" class="btn btn-primary" target="_blank">Download</a>
         </div>
     </div>
     <?php endwhile; ?>
