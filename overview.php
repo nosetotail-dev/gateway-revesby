@@ -130,24 +130,24 @@ get_header(); ?>
 			<div class="timeline-slider" data-aos="fade-up">
 				<div class="wrap">
 					<div class="active" data-item="1">
-						<p class="cat">Jun 2025</p>
 						<p>Development<br> Approval</p>
+						<p class="cat">Jun 2025</p>
 					</div>
 					<div data-item="2">
-						<p class="cat">Jan 2026</p>
 						<p>Construction <br>Commenced</p>
+						<p class="cat">Jan 2026</p>
 					</div>
 					<div data-item="3">
-						<p class="cat">Early Access Available</p>
 						<p>Tenant <br>Fitout</p>
+						<p class="cat">Early Access Available</p>
 					</div>
 					<div data-item="4">
-						<p class="cat">Q4 2027</p>
 						<p>Practical <br>Completion</p>
+						<p class="cat">Q4 2027</p>
 					</div>
 					<div data-item="5">
-						<p class="cat">Q4 2027</p>
 						<p>Lease <br>Commencement</p>
+						<p class="cat">Q4 2027</p>
 					</div>
 				</div>
 				<div class="timeline-slider-nav">

@@ -41,7 +41,46 @@ get_header(); ?>
 	</div>
 </div>
 <div class="anchor" id="location"></div>
-<div class="section section-location pb-0">
+<div class="section section-home2">
+	<div class="container">
+		<div class="heading">
+			<h2>Location<br> Overview</h2>
+		</div>
+		<div class="block" data-aos="fade-up">
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon7.svg" alt=""></div>
+				<div class="text">
+					<h3 class="alt">Located in a premier industrial location</h3>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon8.svg" alt=""></div>
+				<div class="text">
+					<h3 class="alt">17km* West of Sydney Airport & Port Botany</h3>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon9.svg" alt=""></div>
+				<div class="text">
+					<h3 class="alt">22km* from Sydney CBD</h3>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon10.svg" alt=""></div>
+				<div class="text">
+					<h3 class="alt">Immediate access to Milperra Road, South-Western Motorway and Cumberland Highway</h3>
+				</div>
+			</div>
+			<div class="column">
+				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon11.svg" alt=""></div>
+				<div class="text">
+					<h3 class="alt">Serviced by multiple surrounding cafes</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section section-location">
 	<div class="container">
 		<div class="heading">
 			<h2>Connected to<br> everything</h2>
@@ -96,47 +135,6 @@ get_header(); ?>
 					<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-primary">Enquire</a>
 				</div>
 				<p class="note">*Approximate distances</p>
-			</div>
-		</div>
-
-		<hr>
-	</div>
-</div>
-<div class="section section-home2 pt-0">
-	<div class="container">
-		<div class="heading">
-			<h2>Location<br> Overview</h2>
-		</div>
-		<div class="block" data-aos="fade-up">
-			<div class="column">
-				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon7.svg" alt=""></div>
-				<div class="text">
-					<h3 class="alt">Located in a premier industrial location</h3>
-				</div>
-			</div>
-			<div class="column">
-				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon8.svg" alt=""></div>
-				<div class="text">
-					<h3 class="alt">17km* West of Sydney Airport & Port Botany</h3>
-				</div>
-			</div>
-			<div class="column">
-				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon9.svg" alt=""></div>
-				<div class="text">
-					<h3 class="alt">22km* from Sydney CBD</h3>
-				</div>
-			</div>
-			<div class="column">
-				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon10.svg" alt=""></div>
-				<div class="text">
-					<h3 class="alt">Immediate access to Milperra Road, South-Western Motorway and Cumberland Highway</h3>
-				</div>
-			</div>
-			<div class="column">
-				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon11.svg" alt=""></div>
-				<div class="text">
-					<h3 class="alt">Serviced by multiple surrounding cafes</h3>
-				</div>
 			</div>
 		</div>
 	</div>

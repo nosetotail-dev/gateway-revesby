@@ -1238,7 +1238,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 }
 .section.section-program .timeline-slider .wrap:before {
   width: 3px;
-  height: 84%;
+  height: 82%;
   content: "";
   position: absolute;
   top: 10px;
@@ -1283,6 +1283,9 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .section.section-program .timeline-slider .wrap div:hover {
   cursor: pointer;
 }
+.section.section-program .timeline-slider .wrap div p {
+  margin-bottom: 10px;
+}
 @media only screen and (min-width: 992px) {
   .section.section-program .timeline-slider .wrap div p {
     opacity: 0.44;
@@ -1299,7 +1302,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   background: #2BB573;
   color: #fff;
   padding: 3px 10px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 @media only screen and (min-width: 992px) {
   .section.section-program .timeline-slider .wrap div {
@@ -1722,6 +1725,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 .section.section-location {
   background: #1A2C56;
   color: #fff;
+  border-top: 1px solid #2BB573;
 }
 .section.section-location h2 {
   font-size: 32px;
@@ -1825,9 +1829,6 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
   width: 100%;
 }
 .section.section-location .block {
-  border-bottom: 1px solid #2BB573;
-  margin-bottom: 50px;
-  padding-bottom: 60px;
   margin-top: 50px;
 }
 @media only screen and (min-width: 992px) {
@@ -1962,10 +1963,6 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     padding: 15px 0 15px 58px;
     max-width: 320px;
   }
-}
-.section.section-location hr {
-  margin: 0;
-  padding: 0;
 }
 .section.section-location-sc h2 {
   font-size: 32px;

@@ -1123,7 +1123,7 @@ b, strong{
 				}
 				&:before{
 					width: 3px;
-					height: 84%;
+					height: 82%;
 					content: '';
 					position: absolute;
 					top:10px;
@@ -1164,6 +1164,7 @@ b, strong{
 						cursor: pointer;
 					}
 					p{
+						margin-bottom: 10px;
 						@media only screen and (min-width: $md) {
 							opacity: 0.44;
 						}
@@ -1181,7 +1182,7 @@ b, strong{
 						background: $theme2;
 						color: #fff;
 						padding: 3px 10px;
-						margin-bottom: 5px;
+						margin-bottom: 25px;
 					}
 					@media only screen and (min-width: $md) {
 						font-size: 18px;
@@ -1586,6 +1587,8 @@ b, strong{
 	&.section-location{
 		background: $theme1;
 		color: #fff;
+		border-top: 1px solid $theme2;
+
 		h2{
 			@include heading1();
 		}
@@ -1681,9 +1684,6 @@ b, strong{
 		}
 
 		.block{
-			border-bottom: 1px solid $theme2;
-			margin-bottom: 50px;
-			padding-bottom: 60px;
 			margin-top: 50px;
 			@media only screen and (min-width: $md) {
 				display:flex;
@@ -1821,10 +1821,6 @@ b, strong{
 				}
 
 			}
-		}
-		hr{
-			margin:0;
-			padding:0;
 		}
 	}
 
