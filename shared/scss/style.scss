@@ -1646,7 +1646,7 @@ b, strong{
 				font-size: 18px;
 				margin-left: 58px;
 				p{
-					max-width: 600px;
+					max-width: 700px;
 				}
 			}
 		}
@@ -1972,12 +1972,6 @@ b, strong{
 	&.section-warehouse{
 		h2{
 			@include heading1();
-			span{
-				display: none;
-				&.active{
-					display: block;
-				}
-			}
 		}
 		.heading{
 			padding-left: 38px;
@@ -2022,6 +2016,12 @@ b, strong{
 				margin-bottom: 40px;
 				padding-left: 58px;
 				font-size: 18px;
+			}
+			.content{
+				display: none;
+				&.active{
+					display: block;
+				}
 			}
 		}
 

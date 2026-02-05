@@ -23,17 +23,31 @@ get_header(); ?>
 <div class="section section-warehouse">
 	<div class="container">
 		<div class="heading">
-			<h2>Level 1 –<br> 
-				<span data-id="warehouse1" class="active">Warehouse 1</span>
-				<span data-id="warehouse2">Warehouse 2</span>
-			</h2>
-			<p>Available for lease</p>
+			<div class="content active" data-id="warehouse1">
+				<h2>Level 1 –<br> 
+					Warehouse 1
+				</h2>
+				<p>Available for lease</p>
+			</div>
+			<div class="content" data-id="warehouse2">
+				<h2>Level 1 –<br> 
+					Warehouse 2
+				</h2>
+				<p>Available for lease</p>
+			</div>
+			<div class="content" data-id="breezeway">
+				<h2>Level 1 –<br> 
+					Breezeway
+				</h2>
+				<p>&nbsp;</p>
+			</div>
 		</div>
 		<div class="link"><a href="<?php the_field('racking_layouts'); ?>" download class="btn btn-primary">Download Indicative Racking Layouts</a></div>
 	</div>
 	<div class="warehouse" data-aos="fade">
 		<div class="image active" data-id="warehouse1"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse1.png" alt=""></div>
 		<div class="image" data-id="warehouse2"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse2.png" alt=""></div>
+		<div class="image" data-id="breezeway"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/breezeway.png" alt=""></div>
 		<div id="warehouse"></div>
 		<img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/warehouse.png?ver=1.1" class="base" alt="">
 	</div>

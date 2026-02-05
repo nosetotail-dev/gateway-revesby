@@ -86,7 +86,7 @@ get_header(); ?>
 			<h2>Connected to<br> everything</h2>
 		</div>
 		<div class="text">
-			<p>Direct routes to Cumberland Highway and beyond, positioning you 17km* west of Sydney Airport and Port Botany, and 22km* from the Sydney CBD.</p>
+			<p>Enjoy immediate access to the M5 / South Western Motorway, providing fast, direct connections to the Cumberland Highway and Sydney’s major transport network. The site is positioned just 17km* west of Sydney Airport and Port Botany, and 22km* from the Sydney CBD — a key advantage for logistics-driven occupiers.</p>
 		</div>
 
 		<div class="block" data-aos="fade">
@@ -95,8 +95,10 @@ get_header(); ?>
 				    <div class="acf-map" data-zoom="16">
 				        <?php while ( have_rows('map') ) : the_row(); 
 			            $marker = get_sub_field('marker');
+			            $is_special = get_sub_field('main');
+            			$marker_class = $is_special ? 'marker special-marker' : 'marker';
 			            ?>
-				        <div class="marker" data-lat="<?php echo esc_attr($marker['lat']); ?>" data-lng="<?php echo esc_attr($marker['lng']); ?>"></div>
+				        <div class="<?php echo $marker_class; ?>" data-lat="<?php echo esc_attr($marker['lat']); ?>" data-lng="<?php echo esc_attr($marker['lng']); ?>"></div>
 				    	<?php endwhile; ?>
 				    </div>
 				<?php endif; ?>

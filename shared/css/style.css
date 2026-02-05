@@ -1794,7 +1794,7 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     margin-left: 58px;
   }
   .section.section-location .text p {
-    max-width: 600px;
+    max-width: 700px;
   }
 }
 .section.section-location .link {
@@ -2133,12 +2133,6 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     margin-bottom: 30px;
   }
 }
-.section.section-warehouse h2 span {
-  display: none;
-}
-.section.section-warehouse h2 span.active {
-  display: block;
-}
 .section.section-warehouse .heading {
   padding-left: 38px;
   margin-bottom: 30px;
@@ -2183,6 +2177,12 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
     padding-left: 58px;
     font-size: 18px;
   }
+}
+.section.section-warehouse .heading .content {
+  display: none;
+}
+.section.section-warehouse .heading .content.active {
+  display: block;
 }
 .section.section-warehouse .warehouse {
   position: relative;

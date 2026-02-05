@@ -233,14 +233,28 @@ function initMarker( $marker, map ) {
     var lng = $marker.data('lng');
     var latLng = { lat: parseFloat(lat), lng: parseFloat(lng) };
 
+    var defaultIconPath = '/wp-content/themes/revesby/shared/images/marker2.png';
+    var specialIconPath = '/wp-content/themes/revesby/shared/images/marker.png';
+
+    // 1. Setup default dimensions
+    var iconUrl = defaultIconPath;
+    var width = 30;
+    var height = 30;
+
+    if ( $marker.hasClass('special-marker') ) {
+        iconUrl = specialIconPath;
+        width = 50;  // Bigger width
+        height = 50; // Bigger height
+    }
+
     var marker = new google.maps.Marker({
         position : latLng,
         map: map,
         icon: {
-            url: "/wp-content/themes/revesby/shared/images/marker.png",
-            scaledSize: new google.maps.Size(30, 30),
-            origin: new google.maps.Point(0,0),
-            anchor: new google.maps.Point(15, 15)
+            url: iconUrl,
+            scaledSize: new google.maps.Size(width, height), // Dynamic size
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(width / 2, height / 2) // Dynamic anchor
         }
     });
 
