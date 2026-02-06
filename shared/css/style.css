@@ -2288,6 +2288,12 @@ video::-webkit-media-controls, video::-webkit-media-controls-overlay-play-button
 }
 .section.section-floorplan .heading .content {
   display: none;
+  min-height: 195px;
+}
+@media only screen and (min-width: 992px) {
+  .section.section-floorplan .heading .content {
+    min-height: 255px;
+  }
 }
 .section.section-floorplan .heading .content.active {
   display: block;

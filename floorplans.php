@@ -120,6 +120,12 @@ if( $images ): ?>
 				OFFICE 1C 323 m²<br>
 				GLA: 4,603 sqm</p>
 			</div>
+			<div class="content" data-id="bw">
+				<h2>Breezeway</h2>
+				<p>TOTAL AREA: ~8,900sqm<br>
+				HARDSTAND DEPTH: 36m<br>
+				CONTAINER UNLOADING: ~1,060sqm per tenancy</p>
+			</div>
 		</div>
 		
 		<div class="floorplan" data-aos="fade">
@@ -130,6 +136,7 @@ if( $images ): ?>
 			<div class="image" data-id="1c"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_1c.png" alt=""></div>
 			<div class="image" data-id="1d"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_1d.png" alt=""></div>
 			<div class="image" data-id="1e"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_1e.png" alt=""></div>
+			<div class="image" data-id="bw"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/floorplan_bw.png" alt=""></div>
 			<div id="floorplan"></div>
 			<img src="<?php echo the_field('floorplan_image'); ?>" class="base" alt="">
 		</div>
