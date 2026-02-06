@@ -89,8 +89,43 @@ get_header(); ?>
 			<p>Enjoy immediate access to the M5 / South Western Motorway, providing fast, direct connections to the Cumberland Highway and Sydney’s major transport network. The site is positioned just 17km* west of Sydney Airport and Port Botany, and 22km* from the Sydney CBD — a key advantage for logistics-driven occupiers.</p>
 		</div>
 
-		<div class="map" data-aos="fade">
-			<div id="image-map-pro-container"></div>
+		<div class="block" data-aos="fade">
+			<div class="column">
+				<div class="map">
+					<div id="image-map-pro-container"></div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="path">
+					<div class="line"></div>
+					<ul>
+						<li class="active" data-item="1">
+							<span>1 min</span>
+							to Milperra Road (A34) on-ramp
+						</li>
+						<li data-item="2">
+							<span>3 min</span>
+							to South-Western Motorway (M5) on-ramp
+						</li>
+						<li data-item="3">
+							<span>12 min</span>
+							to Bankstown and Sydney Airports
+						</li>
+						<li data-item="4">
+							<span>16 min</span>
+							to Moorebank Intermodal Precinct
+						</li>
+						<li data-item="5">
+							<span>22 min</span>
+							to Port Botancy
+						</li>
+					</ul>
+				</div>
+				<div class="link">
+					<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-primary">Enquire</a>
+				</div>
+				<p class="note">*Approximate distances</p>
+			</div>
 		</div>
 	</div>
 </div>
