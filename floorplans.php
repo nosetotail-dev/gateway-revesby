@@ -116,8 +116,8 @@ if( $images ): ?>
 			<div class="content" data-id="1e">
 				<h2>Level 1<br> Warehouse 1E</h2>
 				<p>Flexible Sizing available</p>
-				<p>WAREHOUSE 1C 4,280 m²<br>
-				OFFICE 1C 323 m²<br>
+				<p>WAREHOUSE: 4,280 sqm<br>
+				OFFICE: 323 sqm<br>
 				GLA: 4,603 sqm</p>
 			</div>
 			<div class="content" data-id="bw">
