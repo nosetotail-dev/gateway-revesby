@@ -13,14 +13,9 @@
 				</ul>
 			</div>
 			<div class="column">
-				<h3>Leasing Enquiries</h3>
+				<h3>Gateway Capital Contact Details</h3>
 
 				<div class="agents">
-					<div class="coln">
-						<p><b>Paul Jewiss</b><br>
-						+61 400 352 830<br>
-						paul.jewiss@gatewaycapital.com.au</p>
-					</div>
 					<div class="coln">
 						<p><b>Dean Todorovski</b><br>
 						+61 433 393 121<br> dean.todorovski@gatewaycapital.com.au</p>
@@ -28,6 +23,18 @@
 					<div class="coln">
 						<p><b>Riley Sampson</b><br>
 						+61 487 319 800<br> riley.sampson@gatewaycapital.com.au</p>
+					</div>
+					<div class="coln">
+						<div class="logo"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/cbre.svg" alt=""></div>
+						<p><b>Tom Rourke</b><br>
+						+61 400 456 363<br>
+						tom.rourke@cbre.com.au</p>
+					</div>
+					<div class="coln">
+						<div class="logo"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/colliers.svg" alt=""></div>
+						<p><b>Trent Gallagher</b><br>
+						+61 432 242 063<br>
+						trent.gallagher@colliers.com</p>
 					</div>
 				</div>
 
