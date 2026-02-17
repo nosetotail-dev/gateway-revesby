@@ -170,6 +170,7 @@ get_header(); ?>
 			</div>
 
 		</div>
+		<p class="small">Source: SA1 Property</p>
 	</div>
 </div>
 <div class="section section-cta">

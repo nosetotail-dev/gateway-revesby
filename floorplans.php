@@ -124,7 +124,7 @@ if( $images ): ?>
 				<h2>Breezeway</h2>
 				<p>TOTAL AREA: ~8,900sqm<br>
 				HARDSTAND DEPTH: 36m<br>
-				CONTAINER UNLOADING: ~1,060sqm per tenancy</p>
+				CONTAINER UNLOADING: ~1,060sqm</p>
 			</div>
 		</div>
 		

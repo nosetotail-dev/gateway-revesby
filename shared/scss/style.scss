@@ -1939,6 +1939,17 @@ b, strong{
 			}
 		}
 
+		.small{
+			margin-left: 38px;
+			margin-top: 30px;
+			font-size: 10px;
+			@media only screen and (min-width: $md) {
+				margin-left: 58px;
+				font-size: 12px;
+				
+			}
+		}
+
 		.stat{
 			display: flex;
 			flex-wrap: wrap;

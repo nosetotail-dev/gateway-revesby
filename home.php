@@ -87,8 +87,8 @@ get_header(); ?>
 			<div class="column">
 				<div class="icon"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/icon5.svg" alt=""></div>
 				<div class="text">
-					<h3>4-star</h3>
-					<p>Targeting a 4-Star Green Star sustainability rating</p>
+					<h3>5-star</h3>
+					<p>Targeting a 5-Star Green Star sustainability rating</p>
 				</div>
 			</div>
 			<div class="column">
