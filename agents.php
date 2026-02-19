@@ -23,14 +23,14 @@
 			</div>
 
 			<div class="column">
-				<div class="image"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/agent4.png" alt=""></div>
+				<div class="image"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/agent5.png" alt=""></div>
 				<h4>Tom Rourke</h4>
 				<p>+61 400 456 363<br>
 				tom.rourke@cbre.com.au</p>
 			</div>
 
 			<div class="column">
-				<div class="image"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/agent5.png" alt=""></div>
+				<div class="image"><img src="<?php bloginfo ('stylesheet_directory'); ?>/shared/images/agent4.png" alt=""></div>
 				<h4>Trent Gallagher</h4>
 				<p>+61 432 242 063<br>
 				trent.gallagher@colliers.com</p>
